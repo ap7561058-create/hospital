@@ -1,0 +1,87 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>MultiSpeciality Hospital — Care & Recovery</title>
+    <meta name="description" content="Responsive one-page HTML template for a multispeciality hospital built with Tailwind CSS." />
+
+    <!-- Tailwind CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- Simple icons (optional) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+
+    <style>
+      html,body { font-family: 'Inter', ui-sans-serif, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial; }
+      /* small shadow accent used on cards */
+      .card-shadow { box-shadow: 0 8px 24px rgba(15,23,42,0.06); }
+    </style>
+  </head>
+
+  <body class="  bg-gradient-to-r from-blue-300 to-green-300 text-slate-800 leading-relaxed">
+
+    
+    <header class="bg-white/80 backdrop-blur sticky top-0 z-40 border-b">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="flex items-center justify-between h-16">
+          <div class="flex items-center gap-4">
+            <a href="#" class="flex items-center gap-3">
+              <div class="h-10 w-10 rounded-full  flex items-center justify-center text-white font-bold"><img src="image/hpt.png" alt="" class=""></div>
+              <div>
+                <span class="font-semibold text-green-600 text-3xl">MultiSpeciality</span>
+                <div class="text-xl text-green-400 mt-0.5">Care & Recovery</div>
+              </div>
+            </a>
+          </div>
+
+          <nav class="hidden md:flex items-center gap-6  font-medium text-slate-700">
+            <a href="service.html" class="hover:text-blue-600 font-semibold">Services</a>
+            <a href="departments.html" class="hover:text-blue-600 font-semibold">Departments</a>
+            <a href="doctors.html" class="hover:text-blue-600 font-semibold">Doctors</a>
+            <a href="contact.html" class="hover:text-blue-600 font-semibold">Contact</a>
+             <a href="Speciality.html" class="hover:text-blue-600 font-semibold ">Speciality</a>
+             <a href="Patients.html" class="hover:text-blue-600 font-semibold">patients</a>
+             <a href="Caring.html" class="hover:text-blue-600 font-semibold">Our Caring</a>
+          </nav>
+
+          <div class="flex items-center gap-3">
+            <a href="appointments.html" class="hidden sm:inline-block px-4 py-2 rounded-lg bg-emerald-600 text-white text-sm font-medium shadow hover:scale-105">Book Appointment</a>
+
+          </header>
+
+
+
+     <!-- APPOINTMENTS -->
+      <section id="appointments" class="bg-emerald-50 py-12">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div class="bg-white rounded-2xl p-8 card-shadow">
+            <h3 class="text-xl font-semibold">Book an Appointment</h3>
+            <p class="text-sm text-slate-500 mt-1">Fill the form and our care team will get back to you.</p>
+
+            <form class="mt-6 grid grid-cols-1 sm:grid-cols-2 gap-4" onsubmit="event.preventDefault(); alert('Demo: form submitted');">
+              <input required type="text" placeholder="Full name" class="w-full p-3 rounded-lg border border-slate-200" />
+              <input required type="tel" placeholder="Phone" class="w-full p-3 rounded-lg border border-slate-200" />
+              <input required type="email" placeholder="Email" class="w-full p-3 rounded-lg border border-slate-200" />
+              <select required class="w-full p-3 rounded-lg border border-slate-200">
+                <option value="">Select Department</option>
+                <option>Cardiology</option>
+                <option>Orthopaedics</option>
+                <option>Neurology</option>
+                <option>Paediatrics</option>
+              </select>
+
+              <input required type="date" class="w-full p-3 rounded-lg border border-slate-200 sm:col-span-1" />
+              <input required type="time" class="w-full p-3 rounded-lg border border-slate-200 sm:col-span-1" />
+
+              <textarea rows="3" placeholder="Short message (optional)" class="w-full p-3 rounded-lg border border-slate-200 sm:col-span-2"></textarea>
+
+              <div class="sm:col-span-2 text-right">
+                <button type="submit" class="px-6 py-3 rounded-lg bg-emerald-600 text-white font-medium">Submit</button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </section>
